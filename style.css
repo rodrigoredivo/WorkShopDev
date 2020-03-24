@@ -1,29 +1,261 @@
-body {
-  background: #e5e5e5;
-  color: #25282b;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900&display=swap');
 
-  text-align: center;
+body {
+    background: #e5e5e5;
+    color: #25282b;
+    
+    font-family: 'Montserrat', sans-serif;
+
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+#modal.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+a {
+    color: #ff5e84;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p, .description {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.1px;
+}
+
+#container {
+    width: 90%;
+    max-width: 980px;
+
+    margin: 40px auto;
+
+    display: flex;
+}
+
+#intro {
+    width: 300px;
+
+    margin-right: 20px;
+}
+
+main {
+    margin: 32px 0;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-evenly;
+
+    margin-bottom: 32px;
 }
 
 button {
-  border: none;
+    background: none;
+    color: #ff5e84;
 
-  font-weight: bold;
+    border: none;
 
-  background: none;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+
+    cursor: pointer;
+
+    outline: none;
 }
 
-.fat {
-  color: white;
-
-  background: #ff5e84;
+button:hover {
+    text-decoration: underline;
 }
 
-#footer a {
-  color: #25282b;
-  text-decoration: none;
+button.fat {
+    color: white;
+    background: #ff5e84;
+
+    width: 150px;
+    height: 40px;
+
+    border-radius: 6px;
+
+    box-shadow: 0px 8px 16px rgba(255, 0, 92, 0.16);
 }
 
-.hide {
-  display: none;
+button.fat {
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+
+    font-size: 14px;
+    font-weight: regular;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+
+    color: #777;
+}
+
+footer a {
+    opacity: 0.7;
+}
+
+.idea {
+    display: flex;
+
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px -8px rgba(1, 1, 1, 0.1);
+
+    padding: 32px;
+
+    margin-bottom: 32px;
+}
+
+.idea img {
+    width: 60px;
+    height: 60px;
+
+    margin-right: 32px;
+}
+
+.idea h3 {
+    margin: 0;
+}
+
+.idea p {
+    margin: 8px 0;
+    color: #777;
+}
+
+.idea .description {
+    margin: 16px 0;
+}
+
+/* MODAL */
+
+#modal {
+    background: #ff5e84;
+
+    position: absolute;
+    top: 0;
+
+    width: 100vw;
+    height: 140vh;
+
+    display: flex;
+    justify-content: center;
+}
+
+#modal .content {
+    margin-top: 128px;
+
+    color: #fff;
+}
+
+#modal .content h1 {
+    text-align: center;
+
+    text-transform: uppercase;
+}
+
+#modal form {
+    width: 80%;
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+.content form div:nth-child(3),
+.content form div:nth-child(4),
+.content form div:nth-child(5) {
+    grid-column: span 2;
+}
+
+form input,
+form textarea {
+    width: 100%;
+
+    padding: 12px;
+    box-sizing: border-box;
+
+    border-radius: 6px;
+    border: 1px solid rgba(141, 25, 52, 0.5);
+
+    outline: none;
+
+    font-size: 16px;
+}
+
+form label {
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 1.5px;
+}
+
+form a {
+
+    width: 150px;
+    height: 40px;
+
+    border-radius: 6px;
+
+    background-color: #ffffff22;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    align-self: end;
+
+    transition: 400ms;
+}
+
+form a:hover {
+    background-color: #fff;
+    color: #ff5e84;
+}
+
+form button {
+    background: #fff;
+
+    width: 150px;
+    height: 40px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    margin-top: 32px;
+
+    grid-column: 2;
+
+    justify-self: end;
+
+    transition: 400ms;
+}
+
+form button:hover {
+    background-color: #0984e3;
+    color: #fff;
+
+    text-decoration: none;
 }
