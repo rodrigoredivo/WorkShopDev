@@ -31,6 +31,20 @@ const ideas = [
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Et, saepe suscipit sapiente vero voluptas necessitatibus ut quibusdam distinctio adipisci,repudiandae perspiciatis similique dolor voluptatem rem quasi, asperiores doloribus nemo officiis.",
     url: "https://rocketseat.com.br"
   },
+  {
+    img: "https://image.flaticon.com/icons/svg/2737/2737379.svg",
+    title: "Video-game",
+    category: "Distração",
+    description: " Lorem ipsum dolor sit amet consectetur adipisicing elit.Et, saepe suscipit sapiente vero voluptas necessitatibus ut quibusdam distinctio adipisci, repudiandae perspiciatis similique dolor voluptatem rem quasi, asperiores doloribus nemo officiis.",
+    url: "https://rocketseat.com.br"
+  },
+  {
+    img: "https://image.flaticon.com/icons/svg/2737/2737393.svg",
+    title: "Tocar Violão",
+    category: "Diversão em Amigos",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Et, saepe suscipit sapiente vero voluptas necessitatibus ut quibusdam distinctio adipisci,repudiandae perspiciatis similique dolor voluptatem rem quasi, asperiores doloribus nemo officiis.",
+    url: "https://rocketseat.com.br"
+  },
 ]
 
 
